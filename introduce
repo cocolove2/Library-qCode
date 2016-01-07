@@ -1,0 +1,13 @@
+ library-qcode 使用说明
+
+ 本库是基于zxing开源框架
+
+ 1.添加权限
+     <uses-permission android:name="android.permission.VIBRATE" />
+     <uses-permission android:name="android.permission.CAMERA" />
+     <uses-feature android:name="android.hardware.camera" />
+     <uses-feature android:name="android.hardware.camera.autofocus" />
+
+ 2.CodeUtil中有一维码，二维码以及带logo的二维码的生成方法，直接调用即可
+
+ 3.MipcaCaptureFragment是二维码扫描界面，嵌入到项目中的activity中并实现OnScanCodeResultListener接口，处理扫描后的数据
